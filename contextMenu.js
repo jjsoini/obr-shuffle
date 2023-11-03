@@ -51,7 +51,7 @@ export function setupContextMenu() {
         label: "Shuffle",
         filter: {
           min: 2,
-          roles: "GM"
+          roles: ["GM"],
         },
       },
     ],
