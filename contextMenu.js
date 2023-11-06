@@ -26,11 +26,12 @@ export function setupContextMenu() {
     function shuffleZIndices(arr) {
         const zIndices = arr.map(item => item.zIndex);
         let position;
+        let coverIndex = 0;
         // Fisher-Yates Shuffle Algorithm
         for (let i = zIndices.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
           [zIndices[i], zIndices[j]] = [zIndices[j], zIndices[i]];
-        }
+        }      
       
         for (let i = 0; i < arr.length; i++) {
           arr[i].zIndex = zIndices[i];
@@ -39,7 +40,7 @@ export function setupContextMenu() {
           } else {
             arr[i].position = position;
           }
-
+          arr[i].rotation = 0;
         }
     }
 
