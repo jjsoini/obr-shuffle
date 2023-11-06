@@ -1,9 +1,9 @@
 {
     "name": "Shuffle",
-    "version": "0.0.1",
-    "manifest_version": 1,
+    "version": "0.0.2",
+    "manifest_version": 2,
     "author": "Jussi Soini aka Pulpscape",
     "icon": "/logo.png",
-    "description": "Shuffle selected images' z-order on the same layer",
+    "description": "Shuffle selected images' z-order on the same layer and stack them",
     "background_url": "/"
 }
